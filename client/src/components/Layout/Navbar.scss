@@ -1,0 +1,20 @@
+.logo {
+  width: 170px;
+  padding: 5px 0;
+}
+
+.responsive-logo {
+  width: 120px;
+  top: -30px;
+}
+
+.sticky-active {
+  .logo {
+    width: 120px;
+    padding: 0;
+  }
+}
+
+.relative {
+  position: relative;
+}
