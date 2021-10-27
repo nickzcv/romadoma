@@ -19,7 +19,8 @@ import SpecialOffer from '../../components/Home/Home-one/SpecialOffer';
 import SpecialProducts from '../../components/Home/Home-one/SpecialProducts';
 import QuickView from '../../components/Products/QuickView';
 import Preloader from '../../components/Common/Preloader';
-import cartContext from '../../contexts/cart-context';import './Home.scss';
+import cartContext from '../../contexts/cart-context';
+import './Home.scss';
 
 function Home() {
   const [product, setProduct] = useState({});
@@ -97,7 +98,6 @@ function Home() {
             addToCart={addToCart}
           />
           <LatestNews />
-          <Partner paddingClass=" ptb-100" />
 
           <Footer />
           <QuickView

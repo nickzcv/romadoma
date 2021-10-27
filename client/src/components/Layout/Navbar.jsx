@@ -91,7 +91,7 @@ function Navbar() {
                     isActive={() => pagesRoutes.includes(pathname)}
                     className="nav-link"
                 >
-                  Игрушки по категориям <i className="bx bx-chevron-down chevron-display"></i>
+                  Категории <i className="bx bx-chevron-down chevron-display"></i>
                   <span className="plus_icon">+</span>
                 </NavLink>
                 <ul className="dropdown-menu">
@@ -225,7 +225,7 @@ function Navbar() {
                     isActive={() => blogRoutes.includes(pathname)}
                     className="nav-link"
                 >
-                  Для родителей <i className="bx bx-chevron-down chevron-display"></i>
+                  Информация <i className="bx bx-chevron-down chevron-display"></i>
                   <span className="plus_icon">+</span>
                 </NavLink>
                 <ul className="dropdown-menu">
