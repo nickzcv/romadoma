@@ -7,7 +7,7 @@ import About from './pages/About/About';
 import Search from './pages/About/Search';
 import ResetPassword from './pages/Authentications/ResetPassword';
 import OurTeam from './pages/About/OurTeam';
-import PricingPlans from './pages/About/PricingPlans';
+
 import Contact from './pages/About/Contact';
 import Faqs from './pages/About/Faqs';
 import Error404 from './pages/About/Error-404';
@@ -17,13 +17,8 @@ import TermsOfService from './pages/About/TermsOfService';
 import PrivacyPolicy from './pages/About/PrivacyPolicy';
 import MyAccount from './pages/About/MyAccount';
 import Shop from './pages/Shop/Shop';
-import ShopListView from './pages/Shop/ShopListView';
-import ShopLeftSidebar from './pages/Shop/ShopLeftSidebar';
-import ShopRightSidebar from './pages/Shop/ShopRightSidebar';
-import ShopFullWidth from './pages/Shop/ShopFullWidth';
 import Cart from './pages/Shop/Cart';
 import Orders from './pages/Shop/Orders';
-import WishList from './pages/Shop/WishList';
 import Checkout from './pages/Shop/Checkout';
 import ProductsDetails from './pages/Shop/ProductsDetails';
 import ProductsDetailsSidebar from './pages/Shop/ProductsDetailsSidebar';
@@ -103,7 +98,7 @@ function App() {
               <Route path="/" exact component={Home} />
               <Route path="/about" component={About} />
               <Route path="/our-team" component={OurTeam} />
-              <Route path="/pricing-plans" component={PricingPlans} />
+
               <Route path="/search" component={Search} />
               <Route path="/contact" component={Contact} />
               <Route path="/faqs" component={Faqs} />
@@ -121,13 +116,8 @@ function App() {
                 path="/search/:keyword/page/:pageNumber"
                 component={Shop}
               />
-              <Route path="/shop-list-view" component={ShopListView} />
-              <Route path="/shop-left-sidebar" component={ShopLeftSidebar} />
-              <Route path="/shop-right-sidebar" component={ShopRightSidebar} />
-              <Route path="/shop-full-width" component={ShopFullWidth} />
               <Route path="/cart" component={Cart} />
               <Route path="/order" component={Orders} />
-              <Route path="/wishlist" component={WishList} />
               <Route path="/checkout" component={Checkout} />
               <Route
                 path="/products-details/:productId"

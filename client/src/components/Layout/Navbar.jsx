@@ -91,7 +91,7 @@ function Navbar() {
                     isActive={() => pagesRoutes.includes(pathname)}
                     className="nav-link"
                 >
-                  Категории <i className="bx bx-chevron-down chevron-display"></i>
+                  Pages <i className="bx bx-chevron-down chevron-display"></i>
                   <span className="plus_icon">+</span>
                 </NavLink>
                 <ul className="dropdown-menu">
@@ -166,14 +166,7 @@ function Navbar() {
 
                         <div className="col">
                           <ul className="megamenu-submenu">
-                            <li>
-                              <NavLink
-                                  to="/tracking-order"
-                                  className="nav-link"
-                              >
-                                Tracking Order
-                              </NavLink>
-                            </li>
+
 
                             <li>
                               <NavLink to="/compare" className="nav-link">
@@ -212,8 +205,26 @@ function Navbar() {
                 </ul>
               </li>
 
+              <li className="nav-item">
+                <NavLink
+                  to="/blog"
+                  isActive={() => blogRoutes.includes(pathname)}
+                  className="nav-link"
+                >
+                  Каталог <i className="bx bx-chevron-down chevron-display"></i>
+                  <span className="plus_icon">+</span>
+                </NavLink>
+                <ul className="dropdown-menu">
+                  <li>
+                    <NavLink to="/tracking-order" className="nav-link">
+                      Отследить заказ
+                    </NavLink>
+                  </li>
+                </ul>
+              </li>
+
               <li className="nav-item eco">
-                <NavLink to="/eco" className="nav-link">
+                <NavLink to="/about" className="nav-link">
                   Эко
                 </NavLink>
                 <span className="ecoIcon"></span>
@@ -229,41 +240,25 @@ function Navbar() {
                   <span className="plus_icon">+</span>
                 </NavLink>
                 <ul className="dropdown-menu">
+
+                  <li>
+                    <NavLink to="/tracking-order" className="nav-link">
+                      Отследить заказ
+                    </NavLink>
+                  </li>
+
                   <li className="nav-item">
                     <NavLink to="/blog" className="nav-link">
-                      Blog
+                      Блог
                     </NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <NavLink to="/blog-list-view" className="nav-link">
-                      Blog List View
+                    <NavLink to="/faqs" className="nav-link">
+                      Частые вопросы
                     </NavLink>
                   </li>
 
-                  <li className="nav-item">
-                    <NavLink to="/blog-left-sidebar" className="nav-link">
-                      Blog Left Sidebar
-                    </NavLink>
-                  </li>
-
-                  <li className="nav-item">
-                    <NavLink to="/blog-right-sidebar" className="nav-link">
-                      Blog Right Sidebar
-                    </NavLink>
-                  </li>
-
-                  <li className="nav-item">
-                    <NavLink to="/blog-full-width" className="nav-link">
-                      Blog Full Width
-                    </NavLink>
-                  </li>
-
-                  <li className="nav-item">
-                    <NavLink to="/blog-details" className="nav-link">
-                      Blog Details
-                    </NavLink>
-                  </li>
                 </ul>
               </li>
 
@@ -284,14 +279,7 @@ function Navbar() {
                     <Link to="/cart">
                       <div className="cartIcon"></div>
                       {cartContext.cartItems && cartContext.cartItems.length > 0 && (
-                        <span className="cartCounter">
-                          {cartContext.cartItems.reduce((count, curItem) => {
-                          return (
-                          count +
-                          parseInt(curItem.price) * parseInt(curItem.quantity || 0)
-                          );
-                        }, 0)}
-                        </span>
+                        <span className="cartCounter">{cartContext.cartItems.length}</span>
                       )}
                     </Link>
                   </span>

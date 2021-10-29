@@ -22,7 +22,6 @@ function Faqs() {
         <div className="faqs-wrapper">
           <PageTitle title="FAQ's" />
           <FaqsArea />
-          <Support />
           <Footer />
         </div>
       )}

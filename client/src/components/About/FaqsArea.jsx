@@ -20,39 +20,10 @@ function FaqsArea() {
     <section className="faqs-area ptb-50">
       <div className="container">
         <div className="section-title">
-          <h2>Frequently Asked Questions</h2>
+          <h2>FAQ: часто задаваемые вопросы</h2>
         </div>
 
-        <div className="tab faqs-list-tab">
-          <ul className="tabs">
-            <li
-              className={toggleState === 1 ? 'current' : ''}
-              onClick={() => toggleTab(1)}
-            >
-              <a href="#" onClick={(event) => event.preventDefault()}>
-                Shopping basics
-              </a>
-            </li>
-
-            <li
-              className={toggleState === 2 ? 'current' : ''}
-              onClick={() => toggleTab(2)}
-            >
-              <a href="#" onClick={(event) => event.preventDefault()}>
-                Payments
-              </a>
-            </li>
-
-            <li
-              className={toggleState === 3 ? 'current' : ''}
-              onClick={() => toggleTab(3)}
-            >
-              <a href="#" onClick={(event) => event.preventDefault()}>
-                Shipping & Returns
-              </a>
-            </li>
-          </ul>
-
+        <div className="tab">
           <div className="tab_content">
             {Data.map((item, index) => {
               return (
@@ -61,76 +32,6 @@ function FaqsArea() {
                   className={
                     toggleState === 1 ? 'show at-item' : 'accordion-display'
                   }
-                >
-                  <div className="faq-accordion">
-                    <ul className="accordion">
-                      <li className="accordion-item">
-                        <div onClick={() => toggle(index)}>
-                          <span className="accordion-title">
-                            {item.question}
-                            <span>
-                              {clicked === index ? (
-                                <i className="bx bx-minus minus-icon"></i>
-                              ) : (
-                                <i className="bx bx-plus"></i>
-                              )}
-                            </span>
-                          </span>
-                        </div>
-                        {clicked === index ? (
-                          <p className="accordion-content show">
-                            {item.answer}
-                          </p>
-                        ) : null}
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              );
-            })}
-
-            {Data.map((item, index) => {
-              return (
-                <div
-                  className={
-                    toggleState === 2 ? 'show at-item' : 'accordion-display'
-                  }
-                  key={index}
-                >
-                  <div className="faq-accordion">
-                    <ul className="accordion">
-                      <li className="accordion-item">
-                        <div onClick={() => toggle(index)}>
-                          <span className="accordion-title">
-                            {item.question}
-                            <span>
-                              {clicked === index ? (
-                                <i className="bx bx-minus minus-icon"></i>
-                              ) : (
-                                <i className="bx bx-plus"></i>
-                              )}
-                            </span>
-                          </span>
-                        </div>
-                        {clicked === index ? (
-                          <p className="accordion-content show">
-                            {item.answer}
-                          </p>
-                        ) : null}
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              );
-            })}
-
-            {Data.map((item, index) => {
-              return (
-                <div
-                  className={
-                    toggleState === 3 ? 'show at-item' : 'accordion-display'
-                  }
-                  key={index}
                 >
                   <div className="faq-accordion">
                     <ul className="accordion">

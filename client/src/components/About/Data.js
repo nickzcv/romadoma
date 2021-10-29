@@ -1,38 +1,41 @@
 export const Data = [
   {
-    question: 'What shipping methods are available?',
+    question: 'Где и как изготавливают ваши игрушки?',
     answer:
-      'Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-  {
-    question: 'Do you ship internationally?',
-    answer:
-      'Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-  {
-    question: 'How do I place an order?',
-    answer:
-      'Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'У нас только настоящие деревянные игрушки котрые содействуют умственному и творческому развитию малыша от производителей Беларуси и Украины. Мы не продаем Китайские товары.',
   },
   {
     question:
-      'Is it possible to pay for an order with Visa and MasterCard payment cards?',
+      'Из каких материалов ваши игрушки?',
     answer:
-      'Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Дерево (береза, ольха), хлопок (нити в наборах стринг-арт), специализированная краска для игрушек из Италии. ',
   },
   {
-    question: 'How long will it take to get my package?',
+    question: 'Какие свойства и особенности ваших игрушек',
     answer:
-      'Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Только натуральное дерево. Все изделия легко собирают и крепятся. Каждая игрушка сопровождается подробной красочной инструкцией.',
   },
   {
-    question: 'What payment methods are accepted?',
+    question: 'Как можно использовать приобретенные игрушки?',
     answer:
-      'Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Самое логичное и популярное решение — подарить игрушку ребенку, который сразу же проявит интерес к подарку. Совершенно неважно, какого возраста и пола ребенок, ведь наши игрушки рассчитаны на детей разного возраста. В каталоге есть все, начиная от деревянных рамок-вкладышей, заканчивая элементами декора детской комнаты. Найти подходящий товар в интернет-магазине детских игрушек "RomaDoma" не составит труда.',
   },
   {
-    question: 'Can I return the product after purchase?',
+    question:
+      'Какими сервисами доставки вы отправляете?',
     answer:
-      'Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Новая Почта, Укрпочта, Justin, Meest, курьерская доставка.',
   },
+  {
+    question:
+      'У Вас есть сертификаты и другие документы о безопасности?',
+    answer:
+      'Да, наши товары прошли полный цикл подтверждения соответствия продукции.',
+  },
+  {
+    question:
+      'У меня есть другой вопрос. Куда обратиться?',
+    answer:
+      'Воспользуйтесь формой ниже.',
+  }
 ];
