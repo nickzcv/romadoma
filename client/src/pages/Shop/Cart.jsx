@@ -5,7 +5,7 @@ import CartArea from '../../components/Shop/CartArea';
 function Cart() {
   return (
     <div className="cart-wrapper">
-      <PageTitle title="Cart" />
+      <PageTitle title="Корзина" />
       <CartArea />
       <Footer />
     </div>

@@ -284,23 +284,17 @@ function Navbar() {
                     <Link to="/cart">
                       <div className="cartIcon"></div>
                       {cartContext.cartItems && cartContext.cartItems.length > 0 && (
-                          <span className="cartCounter">{cartContext.cartItems.length}</span>
+                        <span className="cartCounter">
+                          {cartContext.cartItems.reduce((count, curItem) => {
+                          return (
+                          count +
+                          parseInt(curItem.price) * parseInt(curItem.quantity || 0)
+                          );
+                        }, 0)}
+                        </span>
                       )}
                     </Link>
                   </span>
-{/*
-
-                  <NavLink to="/cart" className="nav-link">
-                    {cartContext.cartItems &&
-                    cartContext.cartItems.reduce((count, curItem) => {
-                      return (
-                          count +
-                          parseInt(curItem.price) * parseInt(curItem.quantity || 0)
-                      );
-                    }, 0)}
-                  </NavLink>
-*/}
-
                 </div>
               </div>
             </div>

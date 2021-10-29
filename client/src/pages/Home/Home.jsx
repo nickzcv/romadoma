@@ -14,7 +14,6 @@ import LatestNews from '../../components/Common/LatestNews';
 import Collection from '../../components/Common/Collection';
 import Overview from '../../components/Home/Home-one/Overview';
 import Banner from '../../components/Home/Home-one/Banner';
-import Partner from '../../components/Common/Partner';
 import SpecialOffer from '../../components/Home/Home-one/SpecialOffer';
 import SpecialProducts from '../../components/Home/Home-one/SpecialProducts';
 import QuickView from '../../components/Products/QuickView';

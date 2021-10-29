@@ -31,11 +31,11 @@ function CartArea() {
                 <table className="table table-bordered">
                   <thead>
                     <tr>
-                      <th scope="col">Product</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Unit Price</th>
-                      <th scope="col">Quantity</th>
-                      <th scope="col">Total</th>
+                      <th scope="col">Позиция</th>
+                      <th scope="col"></th>
+                      <th scope="col">Цена</th>
+                      <th scope="col">Количество</th>
+                      <th scope="col">Сумма</th>
                     </tr>
                   </thead>
 
