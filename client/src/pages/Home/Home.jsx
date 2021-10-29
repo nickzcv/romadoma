@@ -15,7 +15,6 @@ import Collection from '../../components/Common/Collection';
 import Overview from '../../components/Home/Home-one/Overview';
 import Banner from '../../components/Home/Home-one/Banner';
 import SpecialOffer from '../../components/Home/Home-one/SpecialOffer';
-import SpecialProducts from '../../components/Home/Home-one/SpecialProducts';
 import QuickView from '../../components/Products/QuickView';
 import Preloader from '../../components/Common/Preloader';
 import cartContext from '../../contexts/cart-context';
@@ -67,8 +66,8 @@ function Home() {
   return (
     <div className="home-wrapper">
       <Helmet>
-        <title>Гипоаллергенные развивающие игрушки и конструкторы из дерева. У нас можно купить деревянные развивающие Эко игрушки с доставкой по всей Украине.</title>
-        <meta name="description" content="Развивающие игрушки и конструкторы от производителя. Купить деревянные эко игрушки, развивающие игры, Цвик-Арт и Нить-Арт" />
+        <title>Деревянные развивающие игрушки и конструкторы из натурального дерева.</title>
+        <meta name="description" content="Развивающие игрушки и конструкторы из дерева. Купить деревянные эко игрушки, развивающие игры, Цвик-Арт и Нить-Арт" />
       </Helmet>
       {isLoading === true ? (
         <Preloader />
@@ -91,20 +90,14 @@ function Home() {
             showQuickView={showQuickView}
             addToCart={addToCart}
           />
-          <SpecialProducts
-            products={products}
-            showQuickView={showQuickView}
-            addToCart={addToCart}
-          />
-          <LatestNews />
 
+          <LatestNews />
           <Footer />
           <QuickView
             isOpen={isOpen}
             closeModal={closeModal}
             product={product}
           />
-
           <div className="go-top">
             <i className="bx bx-up-arrow-alt"></i>
           </div>

@@ -10,6 +10,7 @@ import SupportTwo from '../../components/Common/SupportTwo';
 import Testimonial from '../../components/Common/Testimonial';
 import Preloader from '../../components/Common/Preloader';
 import Footer from '../../components/Footer/Footer';
+import { Helmet } from 'react-helmet';
 
 function About() {
   const [isLoading, setisLoading] = useState(true);
@@ -22,6 +23,10 @@ function About() {
 
   return (
     <>
+      <Helmet>
+        <title>Гипоаллергенные развивающие игрушки и конструкторы из дерева. У нас можно купить деревянные развивающие Эко игрушки с доставкой по всей Украине.</title>
+        <meta name="description" content="Развивающие игрушки и конструкторы от производителя. Купить деревянные эко игрушки, развивающие игры, Цвик-Арт и Нить-Арт" />
+      </Helmet>
       {isLoading === true ? (
         <Preloader />
       ) : (
