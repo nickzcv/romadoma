@@ -50,5 +50,5 @@ production &&
   });
 // Start point
 app.listen(process.env.PORT || port, function () {
-  console.log(`Site Woody-toys started on port: ${process.env.PORT}`);
+  console.log(`Node started on port: ${process.env.PORT}`);
 });
