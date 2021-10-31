@@ -13,28 +13,25 @@ function TrackingOrderArea() {
 
           <div className="col-lg-6">
             <div className="track-order-content">
-              <h2>Order Tracking</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut abore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea com modo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate.
+                Для того чтобы узнать статус вашего заказа введите ниже Идентификатор(id) вашего заказа.
+                Id заказа был отправлен вам на email.
+                Для сохраниния конфиденциальности введите e-mail который вы указали при оформлении заказа.
               </p>
 
               <form>
                 <div className="form-group">
-                  <label>Order ID</label>
+                  <label>ID заказа</label>
                   <input type="text" className="form-control" />
                 </div>
 
                 <div className="form-group">
-                  <label>Billing Email</label>
+                  <label>E-mail</label>
                   <input type="email" className="form-control" />
                 </div>
 
                 <button type="submit" className="default-btn">
-                  Track Order
+                  Отследить мой заказ
                   <span></span>
                 </button>
               </form>

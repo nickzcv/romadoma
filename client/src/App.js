@@ -12,7 +12,6 @@ import Contact from './pages/About/Contact';
 import Faqs from './pages/About/Faqs';
 import Error404 from './pages/About/Error-404';
 import TrackingOrder from './pages/About/TrackingOrder';
-import Compare from './pages/About/Compare';
 import TermsOfService from './pages/About/TermsOfService';
 import PrivacyPolicy from './pages/About/PrivacyPolicy';
 import MyAccount from './pages/About/MyAccount';
@@ -105,7 +104,6 @@ function App() {
               <Route path="/my-account" component={MyAccount} />
               <Route path="/error-404" component={Error404} />
               <Route path="/tracking-order" component={TrackingOrder} />
-              <Route path="/compare" component={Compare} />
               <Route path="/terms-of-service" component={TermsOfService} />
               <Route path="/privacy-policy" component={PrivacyPolicy} />
               <Route exact path="/shop" component={Shop} />
