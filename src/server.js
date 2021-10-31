@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const fileUpload = require('express-fileupload');
 // ---------------
-const logger = require('morgan');
+//const logger = require('morgan');
 // ---------------
 // Database configuration
 const db = require('./config/db');
@@ -23,7 +23,7 @@ const app = express();
 production && app.use(express.static(path.join(__dirname, '../client/build')));
 // ---------------
 // Run logger
-app.use(logger('dev'));
+//app.use(logger('dev'));
 // ---------------
 // Parse incoming request bodies in a middleware before your handlers
 // available under the req.body property
